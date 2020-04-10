@@ -1,0 +1,15 @@
+{
+  "name": "back-end-with-node.js",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "author": "Vitor Giovane",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon",
+    "prod": "node src/index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.3"
+  }
+}
