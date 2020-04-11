@@ -2,7 +2,13 @@ const express = require('express')
 
 const server = express()
 
+server.use(express.json())
+
 server.get('/projects', (request, response) => {
+  const { title, owner } = request.query
+
+  console.log(title, owner)
+
   response.json([
     { id: 1, name: "Project 1" },
     { id: 2, name: "Project 2" },
@@ -18,6 +24,9 @@ server.get('/projects/:id', (request, response) => {
 })
 
 server.post('/projects', (request, response) => {
+  const { name, owner } = request.body
+  console.log(name, owner)
+
   response.json([
     { id: 1, name: "Project 1" },
     { id: 2, name: "Project 2" },
