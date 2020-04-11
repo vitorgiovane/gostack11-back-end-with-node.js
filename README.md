@@ -1,4 +1,6 @@
 <h2 align="center">
+    <br>
+    <br>
     Back-end with Node.js
     <br>
     <br>  
@@ -16,6 +18,7 @@
 
 ## An example of a project creation request with Postman
 <img alt="GoStack 11 - Vitor" src="https://res.cloudinary.com/vitorgiovane/image/upload/v1586589648/GoStack%2011/2020-04-11_04-18_g9lemm.png" />
+
 <br>
 
 ## :rocket: Technologies
@@ -26,8 +29,12 @@ This project was developed with the following technologies:
 - Postman
 - VS Code
 
+<br>
+
 ## :page_with_curl: License
 This project is under the MIT license. See the [LICENSE](https://github.com/vitorgiovane/gostack11-back-end-with-node.js/blob/master/LICENSE) for more information.
+
+<br>
 
 ---
 Developed by **Vitor Giovane** <span>&#x1f1e7;&#x1f1f7;</span>
