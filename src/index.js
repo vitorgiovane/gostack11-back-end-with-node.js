@@ -1,7 +1,7 @@
 const express = require('express')
 
 const server = express()
-const { uuid } = require('uuidv4')
+const { uuid, isUuid } = require('uuidv4')
 
 server.use(express.json())
 
@@ -11,6 +11,27 @@ const isEmpty = obj => {
   if (typeof (obj) === 'object') return Object.keys(obj).length === 0 && obj.constructor === Object
   return false;
 };
+
+const logRequests = (request, response, next) => {
+  const { method, url } = request
+  console.log(`[${method.toUpperCase()}] ${url}`)
+  console.time('logRequest')
+  next()
+  console.timeEnd('logRequest')
+  console.log('...')
+}
+
+const validateRequestId = (request, response, next) => {
+  const { id } = request.params
+  if (!isUuid(id)) {
+    return response.status(400).json({ error: "Invalid project ID." })
+  }
+
+  return next()
+}
+
+server.use(logRequests)
+server.use('/projects/:id', validateRequestId)
 
 const projects = []
 
