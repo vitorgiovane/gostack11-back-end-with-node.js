@@ -5,7 +5,7 @@
     <br>
     <br>  
 </h2>
-<h4 align="center">Primeira aplicação back-end do GoStack 11</h4>
+<h4 align="center">First back-end application of GoStack 11</h4>
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/vitorgiovane/gostack11-back-end-with-node.js?color=%2304D361">
   <img alt="GitHub tp language" src="https://img.shields.io/github/languages/top/vitorgiovane/gostack11-back-end-with-node.js">
@@ -16,9 +16,18 @@
 
 <img alt="GoStack 11 - Vitor" src="https://res.cloudinary.com/vitorgiovane/image/upload/v1586588476/GoStack%2011/79037498-06fa2380-7ba8-11ea-96d1-6d039f72f0cf_ikydr4.png" />  
 
-<br><br>
+<br>
 
-## An example of a project creation request with Postman
+## :gem: Features
+- Project listing
+- Displaying a project
+- Creation of projects
+- Project update
+- Exclusion of projects
+
+<br>
+
+## :arrow_forward: Project creation request with Postman
 <img alt="GoStack 11 - Vitor" src="https://res.cloudinary.com/vitorgiovane/image/upload/v1586589648/GoStack%2011/2020-04-11_04-18_g9lemm.png" />
 
 <br>
